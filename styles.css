@@ -271,6 +271,19 @@ header {
   max-width: 500px;
   margin: 0 auto;
 }
+.bio_body {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bio_img {
+  margin: 2em auto 0;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
 
 @media(min-width: 1000px){
   .skills {
@@ -326,10 +339,30 @@ header {
     background-blend-mode: multiply;   
   }
 
-  .mywork{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  }
+  .mywork {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  background: #fefefe;
+}
+
+.myskills {
+  background: grey;
+}
+
+.bio {
+  background: #fff7fa;
+}
+
+.myprojects {
+  background: #f9f9f9;
+}
+
 
   .workpiece_img {
     height: 300px;
@@ -342,7 +375,56 @@ header {
     opacity: 0.7;
   }
 
+  .work_piece {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work_piece:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
 /*styling the footer*/
+.footer {
+  background: #1b1515;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.footer_link {
+  display: block;
+  margin-bottom: 1em;
+  color: #f844bc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer_link:hover {
+  text-decoration: underline;
+}
+
+.social_links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.socialitemlink {
+  color: white;
+  text-decoration: none;
+}
+
+.socialitemlink:hover {
+  color: var(--clr-acc);
+}
+
 
 .footer {
   background: #13010d;
